@@ -19,7 +19,7 @@ class Barang extends Seeder
                 'cara_penyimpanan' => 'Simpan di tempat sejuk dan kering, serta terhindar dari sinar matahari langsung',
                 'no_izin_edar' => 'DBL7622235610A2',
                 'harga' => '2287',
-                'kategori' => 'Obat Bebas'
+                'id_kategori' => '2 '
             ],
             [
                 'nama' => 'Sumagesic Tablet',
@@ -30,7 +30,7 @@ class Barang extends Seeder
                 'cara_penyimpanan' => 'Simpan di tempat sejuk dan kering, serta terhindar dari sinar matahari langsung',
                 'no_izin_edar' => 'DBL7814710810A1',
                 'harga' => '2904',
-                'kategori' => 'Obat Bebas',
+                'id_kategori' => '1',
             ],
             [
                 'nama' => 'Becom Zet Tablet',
@@ -41,7 +41,7 @@ class Barang extends Seeder
                 'cara_penyimpanan' => 'Simpan di tempat sejuk dan kering, serta terhindar dari sinar matahari langsung',
                 'no_izin_edar' => 'SD191555181',
                 'harga' => '27240',
-                'kategori' => 'Obat Bebas',
+                'id_kategori' => '1',
             ],
             [
                 'nama' => 'Zegavit Tablet',
@@ -52,7 +52,7 @@ class Barang extends Seeder
                 'cara_penyimpanan' => 'Simpan di tempat sejuk dan kering, serta terhindar dari sinar matahari langsung.',
                 'no_izin_edar' => 'SD151546531',
                 'harga' => '28299',
-                'kategori' => 'Obat Bebas',
+                'id_kategori' => '2',
             ],            
         ];
 

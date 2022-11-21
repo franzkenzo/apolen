@@ -2,13 +2,13 @@
 
 namespace App\Controllers;
 
-use App\Models\Barang;
+use App\Models\BarangModels;
 
 class Home extends BaseController
 {
     public function index()
     {
-        $barangModel = new Barang();
+        $barangModel = new BarangModels();
         $dataBarang = $barangModel->findAll();
 
         $data = [

@@ -4,12 +4,12 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Barang extends Model
+class BarangModels extends Model
 {
     protected $table            = 'barang';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    protected $protectFields    = ['id'];
+    protected $protectFields    = false;
     // protected $allowedFields    = [];
 
     // Dates
@@ -35,4 +35,11 @@ class Barang extends Model
 //     protected $afterFind      = [];
 //     protected $beforeDelete   = [];
 //     protected $afterDelete    = []; 
+    public function getBarangKategori()
+    {
+        $builder = $this->db->table('kategori');
+        $builder->join('barang', 'kategori.id = barang.id_kategori');
+        $query = $builder->get()->getResultArray();
+        return $query;
+    }
 }

@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class CreateBarangTable extends Migration
+class CreateBarangTabel extends Migration
 {
     public function up()
     {
@@ -48,8 +48,10 @@ class CreateBarangTable extends Migration
                 'constraint' => 5,
                 'null' => true,
             ],
-            'kategori' => [
-                'type' => 'TEXT',
+            'id_kategori' => [
+                'type' => 'INT',
+                'constraint' => 5,
+                'null' => true,
             ],
             'created_at' => [
                 'type'       => 'DATETIME',
